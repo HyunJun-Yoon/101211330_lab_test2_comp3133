@@ -1,0 +1,20 @@
+<mat-card class="example-card" class="card">
+  <img [src]="data.links['mission_patch_small']" class="img" />
+  <p>missiondetails works!</p>
+  <h2>MSSION - {{ data["mission_name"] }}</h2>
+  <p>Name: {{ data["mission_name"] }}</p>
+  <p>Launch Year: {{ data["launch_year"] }}</p>
+  <h2>Rocket</h2>
+  <p>Name: {{ data.rocket["rocket_name"] }}</p>
+  <p>Type: {{ data.rocket["rocket_type"] }}</p>
+  <h2>Launch Site</h2>
+  <p>Name: {{ data.launch_site["site_name_long"] }}</p>
+  <h2>Launch Details</h2>
+  <p>{{ data["details"] }}</p>
+  <h2>More Info on Launch Detail</h2>
+  <a href="{{ data.links['video_link'] }}" class="material-icons"> videocam </a>
+  <a href="{{ data.links['wikipedia'] }}" class="material-icons"> public </a>
+  <a href="{{ data.links['article_link'] }}" class="material-icons">
+    description
+  </a>
+</mat-card>

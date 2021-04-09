@@ -1,0 +1,61 @@
+export interface GetData {
+  crew: any;
+  details: any;
+  flight_number: any;
+  is_tentative: any;
+  last_date_update: any;
+  last_ll_launch_date: any;
+  last_ll_update: any;
+  last_wiki_launch_date: any;
+  last_wiki_revision: any;
+  last_wiki_update: any;
+  launch_date_local: any;
+  launch_date_source: any;
+  launch_date_unix: any;
+  launch_date_utc: any;
+  launch_site: {};
+  launch_success: any;
+  launch_window: any;
+  launch_year: any;
+  links: {
+    article_link: any;
+    flickr_images: [];
+    length: any;
+    __proto__: [];
+    mission_patch: any;
+    mission_patch_small: any;
+    presskit: any;
+    reddit_campaign: any;
+    reddit_launch: any;
+    reddit_media: any;
+    reddit_recovery: any;
+    video_link: any;
+    wikipedia: any;
+    youtube_id: any;
+  };
+  mission_id: [];
+  mission_name: any;
+  rocket: {
+    fairings: {
+      reused: any;
+      recovery_attempt: any;
+      recovered: any;
+      ship: any;
+    };
+    first_stage: { cores: [] };
+    rocket_id: any;
+    rocket_name: any;
+    rocket_type: any;
+    second_stage: { block: 5; payloads: [] };
+    __proto__: any;
+  };
+  ships: [];
+  static_fire_date_unix: any;
+  static_fire_date_utc: any;
+  tbd: any;
+  telemetry: { flight_club: any };
+  tentative_max_precision: any;
+  timeline: any;
+  upcoming: any;
+  __proto__: {};
+}

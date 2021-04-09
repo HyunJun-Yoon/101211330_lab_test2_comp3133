@@ -1,0 +1,23 @@
+<h1>SpaceX Mission Launch List</h1>
+
+<h4 *ngFor="let list of dataList" (click)="onSelect(list)">
+  <mat-card class="card">
+    <mat-card-title>
+      {{ list["mission_name"] }}
+    </mat-card-title>
+    <mat-card-content>
+      <img [src]="list.links['mission_patch_small']" class="img" />
+      <p>Mission Name: {{ list["mission_name"] }}</p>
+      <p>Launch Year: {{ list["launch_year"] }}</p>
+      <p>Details: {{ list["details"] }}</p>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button (click)="toggle()" mat-button>ON/OFF</button>
+    </mat-card-actions>
+    <ng-container
+      *ngIf="show && list['mission_id'] === selectedList['mission_id']"
+      ><app-missiondetails [data]="selectedList"></app-missiondetails
+    ></ng-container>
+  </mat-card>
+  <br />
+</h4>
